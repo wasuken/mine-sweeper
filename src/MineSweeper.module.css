@@ -1,4 +1,21 @@
 /* MineSweeper.module.css */
+.main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.header {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.clearButton {
+  width: 100px;
+  height: 50px;
+}
+
 .cell {
   width: 50px;
   height: 50px;
@@ -17,4 +34,42 @@
 
 .mine {
   background-color: red;
+}
+
+.modeSwitch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.causeOfDeath {
+  background-color: #f03;
+}
+
+.radioWrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  margin: 0 0 20px 0;
+}
+
+.radioLabel {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radioInput {
+  display: none;
+}
+
+.description {
+  font-size: 1.1em;
+}
+
+.radioInput:checked + .radioLabel {
+  background-color: #ddd;
+  border-color: #aaa;
 }
